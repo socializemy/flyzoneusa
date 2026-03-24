@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Podcast — Fly Zone USA</title>
+  <meta name="description" content="Watch every episode of the Fly Zone USA Podcast hosted by Trick Trick.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/logo.png" type="image/png">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.png" alt="Fly Zone USA">
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="podcast.html" class="active">Podcast</a></li>
+        <li><a href="clips.html">Clips</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <h1>The Podcast</h1>
+    <div class="line"></div>
+  </div>
+
+  <!-- EPISODE LIST -->
+  <section style="background: var(--deep-navy);">
+    <div class="section-inner podcast-list">
+
+      <div class="podcast-episode">
+        <div class="podcast-thumb">EP 01</div>
+        <div class="podcast-details">
+          <div class="ep-tag">Episode 01</div>
+          <h3>Trick Trick &amp; Kid Rock</h3>
+          <p>Two Detroit legends sit down for a raw, uncut conversation about culture, politics, and what America really needs to hear right now. No script. No filter.</p>
+          <a href="#" class="watch-btn">Watch Now &#8594;</a>
+        </div>
+      </div>
+
+      <div class="podcast-episode">
+        <div class="podcast-thumb">EP 02</div>
+        <div class="podcast-details">
+          <div class="ep-tag">Episode 02</div>
+          <h3>Riley Gaines</h3>
+          <p>Standing up for what you believe in when the world tells you to sit down. Riley Gaines speaks on conviction, courage, and the fight for fairness.</p>
+          <a href="#" class="watch-btn">Watch Now &#8594;</a>
+        </div>
+      </div>
+
+      <div class="podcast-episode">
+        <div class="podcast-thumb">EP 03</div>
+        <div class="podcast-details">
+          <div class="ep-tag">Episode 03</div>
+          <h3>Byron Donalds</h3>
+          <p>Economic empowerment, independent thought, and the future of Black leadership in America. A conversation that challenges every narrative.</p>
+          <a href="#" class="watch-btn">Watch Now &#8594;</a>
+        </div>
+      </div>
+
+      <div class="podcast-episode">
+        <div class="podcast-thumb">EP 04</div>
+        <div class="podcast-details">
+          <div class="ep-tag">Coming Soon</div>
+          <h3>More Episodes Loading...</h3>
+          <p>New guests. New conversations. Subscribe to stay locked in.</p>
+          <a href="#" class="watch-btn" style="opacity:0.5;">Coming Soon</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- SUBSCRIBE CTA -->
+  <section class="join-section" id="join">
+    <div class="section-inner">
+      <h2>Never Miss an Episode</h2>
+      <p>Subscribe to get notified when new episodes drop.</p>
+      <form class="email-form" onsubmit="event.preventDefault(); alert('You are locked in!');">
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+      <div class="socials">
+        <a href="#" class="social-icon" aria-label="YouTube">&#9654;</a>
+        <a href="#" class="social-icon" aria-label="Spotify">SP</a>
+        <a href="#" class="social-icon" aria-label="Apple Podcasts">AP</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="podcast.html">Podcast</a></li>
+        <li><a href="clips.html">Clips</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="footer-copy">&copy; 2026 Fly Zone USA. All Rights Reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('navToggle').addEventListener('click', function() {
+      document.getElementById('navLinks').classList.toggle('open');
+    });
+  </script>
+
+</body>
+</html>
